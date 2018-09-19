@@ -1,0 +1,35 @@
+#rootContainer {
+        display: flex;
+}
+
+.root-container {
+    position: relative;
+}
+
+.root-container .header {
+    position: relative;
+}
+
+.root-container .main {
+    position: relative;
+}
+
+.root-container .footer {
+    position: relative;
+}
+
+.startups-container {
+    background-color: gray;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.gold {
+    background-color: gold;
+}
