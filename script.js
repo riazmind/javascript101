@@ -83,7 +83,6 @@
                 });
             }
             else {
-                //TODO:: REPLACE [chicagoStartups.reverse()] WITH A FUNCTION CALLED "chicagoStartupsReverse" 
                 //chicagoStartups.reverse().forEach( function(startup) { // built-in reverse method 
                 chicagoStartupsReverse().forEach( function(startup) { 
                     var childDiv = document.createElement('div');
@@ -102,18 +101,6 @@
         for(i = chicagoStartups.length - 1; i >= 0; i--) {
             reversedStartups.push(chicagoStartups[i]); 
         }
-
-        /*
-            TODO: REVERSE THE CONTENTS OF THE ARRAY WITHOUT USING THE BUILT IN REVERSE METHOD
-                  RETURN THE REVERSED ARRAY
-
-            TIPS: 
-                1.  REVIEW JAVASCRIPT ARRAY DATA STRUCTURE AND THE BUILTIN METHODS PROVIDED TO ALL ARRAYS
-
-                2.  THIS IS A COMMON JOB INTERVIEW QUESTION, THAT SHOULD BE SOLVABLE BASED ON AN UNDERSTANDING OF
-                    DATA STRUTUCTURES REGARDLESS OF THE PROGRAMMING LANGUAGE
-        
-        */
         return reversedStartups;
     }
 
@@ -183,13 +170,6 @@
                 characterContainer.appendChild(childDiv);
         });
         */
-
-        /*
-            TODO: REMOVES ANY SPECIAL CHARACTERS FROM EACH COMPANY NAME AND
-              DISPLAYS THE NUMBER OF REMAINING CHARACTERS NEXT TO THE FULL WORD.
-              DONT FORGET TO REMOVE LEADING AND TRAILING WHITESPACES AS WELL
-        */
-
     }
 
     function Char_Counts(str1) {
@@ -261,73 +241,23 @@
                         c[i].style.backgroundColor = "lightgrey";
 
                     }
-                    
                 }
             }
         }
-        
-        
-
-        /*
-        TODO: REVIEW THE CODE IN THE PROVIDED REVERSE EXAMPLE, USE JAVASCRIPT TO ADD A CLICKABLE BUTTON 
-        CALLED "Toggle Display" ... WHEN THE USER CLICKS THE BUTTON, IT RENDERS THE DISPLAY OF THE COMPANY NAMES 
-        FROM VERTICAL, TO HORIZONTAL.
-        IF THE USER CLICKS THE TOGGLE BUTTON AGAIN THE NAMES SHOULD ONCE AGAIN BE DISPLAYED VERTICALLY.
-
-        TIPS: 
-            1.  MAKE SURE TO READ AND UNDERSTAND THE DIFFERENCE BETWEEN BLOCK ELEMENTS SUCH AS A DIV, 
-                AND INLINE ELEMENTS SUCH AS A SPAN.
-
-            2.  DIVIDE AND CONQUER.
-
-            3.  
-        */
     }
     
     function run() {
         initDocument();
         initReverse();
     }
-     //run();
     
     var flags = {
         displayInstructions: true
     };
 
-    //TODO INVOKE THIS ANONYMOUS FUNCTION TO DISPLAY HOMEWORK INSTRUCTIONS IN THE CONSOLE
     (function() {
         if (flags.displayInstructions) {
-            console.log(`
-                            ASSUMPTIONS: !!! NO JQUERY !!! 
-                                         TODO INDICATES THAT A SOLUTION IS REQUIRED
-                                         PLEASE INCLUDE YOUR GITHUB URL AS A COMMENT
-                                         EX. // https://github.com/Chandler-Gegg/javascript101.git
-
-                            Feel free to complete the exercises in whatever order you like.  
-
-                            Make sure to push your code to your own github repo as well as SUBMIT A ZIPFILE TO D2L.
-                            HOMEWORK IS DUE WEDNESDAYS AT MIDNIGHT NO EXCEPTIONS.
-                            dont forget to slack me the url to your github account as well.  
-
-                            You can earn extra credit by using the provided css classes in the style tag or additionally 
-                            you can pull in an external css library like bootstrap.  if you bring in bootstrap make sure to style
-                            the buttons using bootstraps built in button styling classes.
-
-                            Additionally, can earn extra credit by using an object to count the number of occurrences 
-                            of each character accross all startup names and style and display the results as part of the
-                            "cleanAndCountCharacters" function.
-
-                            If you are having trouble getting started, I would spend a lot of time reviewing the source code provided in the reverse example.
-                            Make sure I understand whats going on and do a google search on anything that is confusing.  
-                            THE BETTER YOU UNDERSTAND THE EXAMPLE THE EASIER THIS SHOULD BE. THEN REVIEW THE TODOS AND START BY TRYING TO SOLVE THE EASIEST
-                            PROBLEM.
-
-                            FROM MY OWN EXPERIENCE, I FIND THAT WHEN IM STRUGGLING WITH A PROBLEM, IT USUALLY MEANS
-                            I DONT FULLY UNDERSTAND THE TOOLS THAT I AM USING.
-
-                            GOOD LUCK, SEE YOU ON THE FLIPPITY FLOP "\_(**/)_/"
-
-                        `);
+            console.log(`Display in console`);
         }
         
     })(); // (); display the instructions in console. 
